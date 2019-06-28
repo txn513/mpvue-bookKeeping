@@ -39,6 +39,4 @@ npm run dev
 mongod
 ```
 
-## 线上体验
-
-![tiyan](screenshots/tiyan.png)
+## 

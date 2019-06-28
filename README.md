@@ -23,7 +23,7 @@ npm run dev
 cd server
 
 # 安装依赖
-npm run dev
+npm install
 
 # 运行开发环境
 npm run dev

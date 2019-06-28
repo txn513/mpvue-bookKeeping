@@ -1,37 +1,30 @@
-# mpvue-koa2
+## 技术栈
 
-> A Mpvue project
+> mpvue + vuex + koa2 + mongoose
 
-## Build Setup
+## 运行
 
-``` bash
-# 初始化项目
-vue init mpvue/mpvue-quickstart myproject
-cd myproject
+### 前端运行
 
+```shell
 # 安装依赖
-yarn
+npm install
 
-# 开发时构建
-npm dev
+# 运行开发环境
+npm run dev
 
-# 打包构建
-npm build
-
-# 指定平台的开发时构建(微信、百度、头条、支付宝)
-npm dev:wx
-npm dev:swan
-npm dev:tt
-npm dev:my
-
-# 指定平台的打包构建
-npm build:wx
-npm build:swan
-npm build:tt
-npm build:my
-
-# 生成 bundle 分析报告
-npm run build --report
+# 用小程序开发工具导入dist下的项目
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### 后端运行
+
+```shell
+# 进入server目录
+cd server
+
+# 安装依赖
+npm run dev
+
+# 运行开发环境
+npm run dev
+```

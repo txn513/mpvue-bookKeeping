@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "闪记账",
+    "navigationBarBackgroundColor": "#f9db61",
+    "disableScroll":true,
+    "enablePullDownRefresh": true
+  }
+  

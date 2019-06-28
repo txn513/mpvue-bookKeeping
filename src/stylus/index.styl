@@ -1,0 +1,88 @@
+// @import "./mixin.styl"
+// @import "./reset.styl"
+// @import "./common.styl"
+@import "./variables.styl"
+
+.isPhoneX-padding
+    padding-bottom isPhoneXBottom !important
+.isPhoneX-bottom
+    bottom isPhoneXBottom !important
+.isPhoneX-margin
+    margin-bottom isPhoneXBottom !important
+
+// 图标列表
+.icon-wrap
+    display:flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    justify-content:flex-start;
+    .icon-item
+        width (750px / 4)
+        height (750px / 4)
+        display flex
+        align-items center
+        justify-content center
+        flex-direction column
+        .circle
+            width 110px
+            height 110px
+            background #f5f5f5
+            border-radius 50%
+        &.with-title
+            margin-top 20px
+            .icon-name
+                margin-top 10px
+                font-size 30px
+                text-align center
+                color fontColorGray
+        &.active
+            .circle
+                background themeColor
+
+
+.bottomBtn 
+    height bottomBtnHeight
+    width 100%
+    position fixed
+    bottom 0
+    left 0
+    background #fff
+    font-size 30px
+    text-align center
+    line-height 100px
+    box-shadow 0 0 2px #C4C4C4
+    &.isIphoneX
+        padding-bottom isPhoneXBottom
+
+.tab 
+    display flex
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100px
+    background themeColor
+    z-index 100
+    .tab-item
+        position relative
+        flex 1
+        height 100px
+        box-sizing border-box
+        color fontColor
+        font-size 30px
+        text-align center
+        line-height 100px
+        &.active:after
+                content ''
+                display block
+                position absolute
+                height 4px
+                width 30%
+                margin-left (- @width / 2)
+                bottom: 0;
+                left 50%
+                background #000
+                
+            
+
+          

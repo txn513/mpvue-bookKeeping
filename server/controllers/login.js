@@ -7,7 +7,7 @@ const utils = require('../utils')
 
 let expiresIn = 60 * 60 * 24
 if(process.env.NODE_ENV == 'local'){
-    expiresIn = 60
+    expiresIn = 60 * 60
 }
 module.exports = async (ctx, next) => {
     let resultData = ''

@@ -2,6 +2,11 @@
 
 > mpvue + vuex + koa2 + mongoose
 
+## 线上版本
+
+![pic](screenshots/pic.jpg)
+
+
 ## 运行
 
 ### 运行前端

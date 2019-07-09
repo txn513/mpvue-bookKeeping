@@ -38,23 +38,7 @@ export default {
     //   logs.unshift(Date.now())
     //   mpvue.setStorageSync('logs', logs)
     // }
-    
-    let self = this;
-
-    // 登录
-    // login().then(res => {
-    //   // this.globalData.Token = res.data.Token
-    //   console.log(res.data.Token)
-    //   let token = res.data.Token
-    //   store.commit('AUTH_SUCCESS', token)
-    //   // store.dispatch('getCategoryList',0)
-    // }).catch(err => {
-    //   console.log(err)
-    // })
-
-    // 隐藏tabbar
-    
-
+  
     // 请求系统信息
     store.dispatch('getSystemInfo')
     

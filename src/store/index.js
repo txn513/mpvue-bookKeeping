@@ -93,7 +93,7 @@ export default new Vuex.Store({
                 if (state.systemInfo) {
                     resolve(state.systemInfo)
                 } else {
-                    uni.getSystemInfo({
+                    wx.getSystemInfo({
                         success(res) {
                             commit('GET_SYSTEMINFO_SUCCESS', res)
                             resolve(res)
@@ -140,6 +140,7 @@ export default new Vuex.Store({
 	},
     getters: {
         isIphoneX: state => {
+            console.log(state.systemInfo)
             return state.systemInfo ? state.systemInfo.model.includes("iPhone X") : false
         },
         incomeList: state => {
